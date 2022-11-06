@@ -138,7 +138,7 @@ function completed() {
     saveInfo.addEventListener("click", function() {
         var initials = userInitials.value;
         if (initials === "") {
-            console.log("Please enter your intiials");
+            console.log("Please enter your initials");
         } else {
             var finalScore = {
                 initials: initials,

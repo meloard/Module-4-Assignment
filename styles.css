@@ -13,16 +13,18 @@ body {
     border: 2px solid black;
 }
 
-#questionsContainer {
-    text-align: center;
-}
-
 #questionsContainer ul li {
     border: 2px solid black;
     border-radius: 40px 40px;
     line-height: 150%;
     margin: 5%;
     cursor: pointer;
+}
+
+#questionsContainer ul :hover {
+    list-style-type: none;
+    background-color: rgba(98, 153, 159, 0.5);
+    color: rgb(47, 15, 228);
 }
 
 #content {
@@ -34,14 +36,10 @@ body {
     height: 700px;
 }
 
-#questionsContainer ul :hover {
-    list-style-type: none;
-    background-color: rgba(160, 194, 216, 0.5);
-    color: rgb(51, 101, 218);
-}
-
 #timeLeft {
     float: right;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #retake {
@@ -55,7 +53,7 @@ body {
     top: 30%;
     left: 5%;
     width: auto;
-    border: 2px solid black;
+    border: 2px solid rgb(18, 17, 17);
 }
 
 #highScore {
@@ -68,16 +66,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(192, 188, 94);
-    padding: 10px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 30px;
     color: white;
     top: 30%;
-    right: 5%;
-    border: 2px solid black;
+    right: 10%;
+    border: 2px solid rgb(31, 29, 29);
 }
 
 button {
-    border-radius: 40px 40px;
+    border-radius: 50px 50px;
     border: none;
     display: block;
     margin-left: auto;
@@ -95,9 +93,14 @@ textarea {
     background-color: rgb(75, 156, 211);
     margin-left: 33%;
     padding: 15px 32px;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
-    border: 2px solid black;
+    border: 2px solid rgb(19, 18, 18);
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
 }
 
 input {
@@ -124,13 +127,8 @@ li {
     margin-top: 10px;
     padding: 5px 15px;
     width: 80%;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
-}
-
-#createDiv {
-    margin-top: 20px;
-    border-top: 1px solid lightgray;
 }
 
 @media screen and (max-width: 768px) {
